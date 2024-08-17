@@ -1,0 +1,9 @@
+IdPuskesmas (7digit) = P001SBW
+IdIndikator(int AI) = 1
+IdLayanan(IdIndikator|KatLayanan|IdPuskesmas|Tahun) = 1AP001SBW2024
+IdCapaian(IdLayanan|Bulan) = 1AP001SBW202401
+
+KatLayanan = A:B (LayananDasar:PencapaianMutu)
+
+Password User
+OPT002 EsF2yy0

@@ -17,10 +17,19 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    use Notifiable;
+    
+    protected $primaryKey = 'IdUser';
+    
     protected $fillable = [
-        'name',
-        'email',
+        'Nama',
+        'Alamat',
+        'NoTelpon',
+        'username',
         'password',
+        'Status',
+        'role',
+        'IdPuskesmas'
     ];
 
     /**
@@ -30,7 +39,7 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password',
-        'remember_token',
+        // 'remember_token',
     ];
 
     /**
@@ -38,8 +47,7 @@ class User extends Authenticatable
      *
      * @var array<string, string>
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-        'password' => 'hashed',
-    ];
+    // protected $casts = [
+    //     'password' => 'hashed',
+    // ];
 }

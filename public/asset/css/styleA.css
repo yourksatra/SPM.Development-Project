@@ -1,0 +1,365 @@
+:root {
+    --primary: #0a2647;
+    --cover: #3c90ff;
+    --light: #F3F6F9;
+    --highlight: #bbb7b7;
+    --dark: #191C24;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: medium;
+}
+.navbar-expand-lg{
+    background-color: var(--primary);
+}
+.navbar .navbar-nav .nav-link h6{
+    color: var(--light);
+    background-color: var(--primary);
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 6px;
+    padding: 5px;
+    margin-bottom: 0;
+}
+.navbar .navbar-nav .nav-link h6:hover,
+.navbar .navbar-nav .nav-link.active h6
+{
+    background-color: var(--light);
+    color: var(--primary);
+}
+.navbar-expand-lg .dropdown-menu{
+    background-color: var(--primary);
+}
+.navbar-expand-lg .dropdown-menu a:hover{
+    color: var(--primary);
+}
+
+#dropdown .btn{
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light);
+    border-radius: 6px;
+    color: var(--primary);
+}
+
+#dropdown .btn:hover{
+    box-shadow: 0 0 0 2px var(--light);
+    background: var(--primary);
+    color: var(--light);
+}
+
+#dropdown .dropdown-menu a{
+    background: var(--primary);
+    color: var(--light);
+    padding-left: 5px;
+    width: auto;
+    margin-inline: 5px;
+}
+
+#dropdown .dropdown-menu a:hover,
+#dropdown .dropdown-menu .dropdown-item.active{
+    background: var(--light);
+    color: var(--primary);
+    border-radius: 4px;
+}
+
+#navbar-top {
+    position: fixed;
+    padding-top: 0;
+    padding-bottom: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbar-bottom {
+    position: fixed;
+    padding-block: 6px;
+    align-items: center;
+    top: 70px;
+    /* Adjust this value based on the height of the first navbar */
+    width: 100%;
+    z-index: 999;
+    background-color: var(--primary);
+}
+
+body{
+    padding-top: 120px;
+}
+
+.hukum {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 120px 0 0 0;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 900px;
+    display: flex;
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    margin: 20px 0 20px 0;
+}
+
+.card-header {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.card-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card-body table,
+.card-body th,
+.card-body td {
+    border: 1px solid #ddd;
+}
+
+.card-body th,
+.card-body td {
+    padding: 0 8px 0 8px;
+    text-align: left;
+}
+
+.card-body th {
+    background-color: #f2f2f2;
+    width: 150px;
+}
+
+.card-body td {
+    background-color: #ffffff;
+}
+
+.file-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 380px;
+}
+
+.file-card .header {
+    background-color: var(--light);
+    color: var(--primary);
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.file-card .body {
+    padding: 20px;
+}
+
+.file-card .body .file {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.file-card .body .file span {
+    font-size: 14px;
+    color: #555;
+}
+
+.file-card .body .file .file-name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.file-card .body .file .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.file-card .body .file .buttons button {
+    padding: 3px 12px;
+    border: none;
+    border-radius: 4px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.file-card .body .file .buttons .preview {
+    background-color: var(--primary);
+    color: #fff;
+    font-size: small;
+}
+
+.file-card .body .file .buttons .download {
+    background-color: var(--primary);
+    color: #fff;
+    font-size: small;
+}
+
+.file-card .body .file .buttons .preview:hover{
+    color: var(--primary);
+    background-color: var(--light);
+}
+
+.file-card .body .file .buttons .download:hover{
+    color: var(--primary);
+    background-color: var(--light);
+}
+
+.clr-icon{
+    display: inline-block;
+    color: var(--primary);
+}
+
+.clr-icon:hover{
+    color: var(--cover);
+}
+
+.icon-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    /* Menempatkan dropdown tepat di bawah input form */
+    left: 0;
+    z-index: 1000;
+    /* Memastikan dropdown berada di atas elemen lain */
+    display: none;
+    /* Sembunyikan dropdown secara default */
+}
+
+.dropdown-menu.show {
+    display: block;
+    margin-right: 2px;
+    /* Tampilkan dropdown saat aktif */
+}
+
+.profile{
+    margin-block: 20px;
+}
+
+.profile h6{
+    color: var(--light);
+}
+
+.profile span{
+    color: var(--highlight);
+}
+
+.btn-group-item {
+    display: inline-block;
+    text-align: center;
+    margin-inline: 5px;
+    position: relative;
+    margin-bottom: 5px;
+    /* Added for absolute positioning of label */
+}
+
+.btn-group-item .btn {
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+    font-size: 14px;
+    /* padding: 0px; */
+    /* Smooth scaling effect */
+}
+
+.btn-group-item:hover .btn,
+.btn-group-item:focus-within .btn {
+    transform: scale(1.2);
+    /* Increase size on hover or focus */
+}
+
+.btn-label {
+    font-size: 14px;
+    text-align: left;
+    opacity: 0;
+    /* Hide label by default */
+    position: absolute;
+    width: max-content;
+    left: 0;
+    top: 85%;
+    /* Position below the button */
+    transition: opacity 0.2s;
+    /* Smooth appearance effect */
+}
+
+.btn-group-item:hover .btn-label,
+.btn-group-item:focus-within .btn-label {
+    opacity: 1;
+    /* Show label on hover or focus */
+}
+
+.status-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.status-active {
+    background-color: green;
+}
+
+.status-inactive {
+    background-color: red;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.info-container label {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.info-container p {
+    margin: 0;
+    color: black;
+    text-align: justify;
+}
